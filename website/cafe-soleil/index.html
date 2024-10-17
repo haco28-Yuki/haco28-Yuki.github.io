@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>café soleil</title>
+  <meta name="description" content="café soleil | 心地よいひとときを、太陽のぬくもりとともに">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- アドビフォント -->
+  <script>
+    (function(d) {9
+      var config = {
+        kitId: 'sfs6bks',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <!-- googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- googleアイコンフォント -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- ローディング画面 -->
+   <div class="loading">
+    <p>
+      <span>L</span>
+      <span>o</span>
+      <span>a</span>
+      <span>d</span>
+      <span>i</span>
+      <span>n</span>
+      <span>g</span>
+      <span>.</span>
+      <span>.</span>
+      <span>.</span>
+    </p>
+   </div>
+
+  <header id="header">
+    <!-- ナビゲーションメニュー -->
+    <div class="nav-menu">
+      <input type="checkbox" id="nav-btn-check">
+      <label for="nav-btn-check" class="nav-btn"><span></span></label>
+      <div class="nav-content">
+        <ul>
+            <li><a href="#header">TOP</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="reserve.html">RESERVE</a></li>
+            <li><a href="#access">ACCESS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインビジュアル -->
+  <div id="main-visual" class="main-visual">
+    <div class="main-visual-logo fade">
+      <img src="images/top/logo_white.png" alt="café soleil">
+    </div>
+    <h1 class="catchphrase fade">
+      心地よいひとときを、<br>      
+      太陽のぬくもりとともに
+    </h1>
+    <div class="img-frame">
+      <div class="img-01"></div>
+      <div class="img-02"></div>
+      <div class="img-03"></div>
+    </div>
+  </div>
+
+  <!-- 予約ボタン -->
+  <div class="reserve-button fade">
+    <a href="#reserve">
+      <span class="css-br">WEBで</span>
+      <span class="css-br">予約する</span>
+      <span class="material-symbols-outlined reserve-icon">
+        event_available
+      </span>
+    </a>
+  </div>
+
+  <main id="main">
+    <!-- メニュー -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="menu-">
+          <h2 class="section-title fade">MENU</h2>
+          <span class="section-title-jp fade">メニュー</span>
+          <p class="menu-text fade">
+            ランチやディナーにおススメのメイン料理や、シェアに最適なサイドメニュー、食後のデザートなど幅広くご用意しております。<br>
+            カフェ・ソレイユでしか食べられない、こだわりのメニューをお楽しみください。
+          </p>
+          <a href="menu.html" class="btn fade">MORE
+            <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+          </a>
+        </div>
+        <div class="deco1 fade"></div>
+        <div class="deco2 fade"></div>
+        <div class="deco3 fade"></div>
+        <div class="deco4 fade"></div>
+        <div class="deco5 fade"></div>
+        <div class="deco6 fade"></div>
+        <div class="deco7 fade"></div>
+        <div class="deco8 fade"></div>
+        <div class="menu-img fade"></div>
+      </div>
+    </section>
+
+    <!-- ギャラリー -->
+    <section id="gallery" class="gallery inner fade">
+      <h2 class="section-title fade">GALLERY</h2>
+      <span class="section-title-jp fade">ギャラリー</span>
+      <span class="camera fade">
+        <img src="images/top/camera-illustration.png" alt="">
+      </span>
+      <p class="gallery-text fade">
+        店舗の様子や新メニュー、季節のイベントの様子が見れます。
+      </p>
+
+      <div class="gallery-image fade">
+        <ul class="gallery-container">
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery001.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery002.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery003.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery004.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery005.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery006.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery007.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery008.png" alt="">
+            </a>
+          </li>
+          <li class="gallery-item">
+            <a href="#">
+              <img src="/images/top/gallery009.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="gallery.html" class="btn fade">MORE
+        <span class="material-symbols-outlined">
+        chevron_right
+        </span>
+      </a>
+    </section>
+
+    <!-- ニュース -->
+    <section id="news" class="news inner fade">
+      <h2 class="section-title fade">NEWS</h2>
+      <span class="section-title-jp fade">お知らせ</span>
+      <p class="news-text fade">
+        臨時休業のお知らせ、イベントの告知、お客様から頂いた声などを掲載しています。
+      </p>
+      <div class="news-content fade">
+        <ul>
+          <li>
+            <a href="#">
+              <img class="news-img" src="images/top/news001.png" alt="">
+            </a>
+            <p class="news-date">
+              <time datetime="2024-09-19">2024.09.19</time>
+            </p>
+            <p class="news-tag">お知らせ</p>
+            <p class="news-title">臨時休業のお知らせ</p>
+          </li>
+          <li>
+            <a href="#">
+              <img class="news-img" src="images/top/news002.png" alt="">
+            </a>
+            <p class="news-date">
+              <time datetime="2024-09-19">2024.09.19</time>
+            </p>
+            <p class="news-tag">お知らせ</p>
+            <p class="news-title">臨時休業のお知らせ</p>
+          </li>
+          <li>
+            <a href="#">
+              <img class="news-img" src="images/top/news003.png" alt="">
+            </a>
+            <p class="news-date">
+              <time datetime="2024-09-19">2024.09.19</time>
+            </p>
+            <p class="news-tag">お知らせ</p>
+            <p class="news-title">臨時休業のお知らせ</p>
+          </li>
+        </ul>
+      </div>
+
+      <a href="news.html" class="btn fade">MORE
+        <span class="material-symbols-outlined">
+        chevron_right
+        </span>
+      </a>
+    </section>
+
+    <!-- 予約 -->
+    <section id="reserve" class="reserve">
+      <img class="reserve-line-img-top" src="images/top/reserve-line-img.png" alt="">
+      <div class="inner">
+        <h2 class="section-title fade">RESERVE</h2>
+        <span class="section-title-jp fade">オンライン予約</span>
+
+        <div class="flex-box fade">
+          <div class="right-box">
+            <h3>予約の注意事項</h3>
+            <h4>予約の確認</h4>
+            <p>
+              予約の日時、人数、コース内容を必ず確認してください。<br>
+              予約の変更やキャンセルは、できるだけ早めにご連絡ください。
+            </p>
+            <h4>キャンセルポリシー</h4>
+            <p>
+              当日のキャンセルはキャンセル料が発生する場合があります。<br>
+              キャンセル料の詳細は、予約時にご確認ください。
+            </p>
+            <img class="glass-icon" src="images/top/glass-illustration.png" alt="">
+            <a href="reserve.html" class="btn fade">ご予約はこちら
+              <span class="material-symbols-outlined">
+              chevron_right
+              </span>
+            </a>
+          </div>
+
+          <div class="left-box">
+            <div class="calendar-wrap">
+              <table class="calendar">
+                <thead>
+                  <tr>
+                    <th class="sun">Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th class="sat">Sat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mute">29</td>
+                    <td class="mute">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="off">7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td class="today">13</td>
+                    <td class="off">14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td class="off">21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td class="off">28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="mute">1</td>
+                    <td class="mute">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="reserve-line-img-bottom" src="images/top/reserve-line-img.png" alt="">
+    </section>
+    
+    <!-- アクセス -->
+    <section id="access" class="access inner">
+      <h2 class="section-title fade">ACCESS</h2>
+      <span class="section-title-jp fade">アクセス</span>
+      <div class="flex-box fade">
+        <div class="map">
+          <img class="map-icon" src="images/top/map-icon.png" alt="">
+          <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51837.06761059463!2d139.61806216188285!3d35.706127428200816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1728099713743!5m2!1sja!2sjp" width="600" height="450" style="border:3px solid #646709;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="address">
+          <dl>
+            <dt>住所</dt>
+            <dd>東京都中野区中央1-2-3</dd>
+            <dt>営業時間</dt>
+            <dd>月曜日から日曜日まで、年中無休で営業しています。</dd>
+            <dt>お問い合わせ</dt>
+            <dd>012-345-6789</dd>
+            <dt>駐車スペース</dt>
+            <dd>あり（10台）</dd>
+            <dt>最寄り駅</dt>
+            <dd>〇〇駅から徒歩3分</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer id="footer" class="footer fade">
+    <div class="footer-inner inner">
+      <div class="footer-logo">
+        <img src="images/top/logo_white.png" alt="café soleil">
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#header">TOP</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="reserve.html">RESERVE</a></li>
+          <li><a href="#access">ACCESS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2024 café soleil.</p>
+  </footer>
+</body>
+</html>

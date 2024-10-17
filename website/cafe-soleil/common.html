@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>café soleil</title>
+  <meta name="description" content="café soleil | 心地よいひとときを、太陽のぬくもりとともに">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- アドビフォント -->
+  <script>
+    (function(d) {9
+      var config = {
+        kitId: 'sfs6bks',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <!-- googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- googleアイコンフォント -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header id="child-header">
+    <div class="inner">
+      <!-- ロゴ -->
+      <div class="small-logo">
+        <img src="images/logo_brown.png" alt="café soleil">
+        <p>café soleil</p>
+      </div>
+      <!-- ナビゲーションメニュー -->
+      <div class="nav-menu">
+        <input type="checkbox" id="nav-btn-check">
+        <label for="nav-btn-check" class="nav-btn"><span></span></label>
+        <div class="nav-content">
+          <ul>
+              <li><a href="index.html">TOP</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="reserve.html">RESERVE</a></li>
+              <li><a href="index.html#acsess">ACCESS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="child-main">
+    <div class="inner">
+      <h2 class="section-title fade">MENU</h2>
+      <span class="section-title-jp fade">メニュー</span>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer-inner inner">
+      <div class="footer-logo">
+        <img src="images/top/logo_white.png" alt="café soleil">
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="reserve.html">RESERVE</a></li>
+          <li><a href="index.html#access">ACCESS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2024 café soleil.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>café soleil</title>
+  <meta name="description" content="café soleil | 心地よいひとときを、太陽のぬくもりとともに">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- アドビフォント -->
+  <script>
+    (function(d) {9
+      var config = {
+        kitId: 'sfs6bks',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <!-- googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- googleアイコンフォント -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header id="child-header">
+    <div class="inner">
+      <!-- ロゴ -->
+      <div class="small-logo">
+        <img src="images/logo_brown.png" alt="café soleil">
+        <p>café soleil</p>
+      </div>
+      <!-- ナビゲーションメニュー -->
+      <div class="nav-menu">
+        <input type="checkbox" id="nav-btn-check">
+        <label for="nav-btn-check" class="nav-btn"><span></span></label>
+        <div class="nav-content">
+          <ul>
+              <li><a href="index.html">TOP</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="news.html">NEWS</a></li>
+              <li><a href="reserve.html">RESERVE</a></li>
+              <li><a href="index.html#acsess">ACCESS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="news-item" id="child-main">
+    <div class="inner">
+      <h2 class="section-title fade">NEWS</h2>
+      <span class="section-title-jp fade">ニュース</span>
+
+      <div class="news-item-page">
+        <p class="news-date">
+            <time datetime="2024-09-19">2024.09.19</time>
+        </p>
+        <p class="news-tag">お知らせ</p>
+        <h3 class="news-title">臨時休業のお知らせ</h3>
+        <img class="news-img" src="images/top/news003.png" alt="">
+        <p class="news-main-text">
+          いつもJオーガニックコーヒーをご利用いただき誠にありがとうございます。
+          誠に勝手ながら、5/14(火)はJオーガニックコーヒーを臨時休業とさせていただきます。
+          5/15(水)より通常営業となります。
+          ご不便をおかけいたしますが、何卒ご理解のほどよろしくお願いいたします。
+
+          オーガニックコーヒー
+        </p>
+      </div>
+
+      <!-- ページネーション -->
+      <ul class="Pagination">
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/1/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                </svg>
+            </a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link  isActive" href="/pages/1/"><span>1</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/2/"><span>2</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/3/"><span>3</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/4/"><span>4</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/5/"><span>5</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/5/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                </svg>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer-inner inner">
+      <div class="footer-logo">
+        <img src="images/top/logo_white.png" alt="café soleil">
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="reserve.html">RESERVE</a></li>
+          <li><a href="index.html#access">ACCESS</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2024 café soleil.</p>
+  </footer>
+</body>
+</html>
