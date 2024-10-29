@@ -2,22 +2,36 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Profile</title>
-  <meta name="description" content="ページの概要文を記載します">
+  <title>haco28 design</title>
+  <meta name="description" content="haco28 design｜小さなWEBサイトのギャラリー">
+
+  <!-- OGP -->
+  <meta property="og:title" content="haco28 design | TOP PAGE" />
+  <meta property="og:description" content="haco28 design｜小さなWEBサイトのギャラリー" />
+  <meta property="og:image" content="images/mainvisual.jpg" />
+  <meta property="og:url" content="############" />
+  <meta property="og:site_name" content="haco28 design" />
+  <!-- Twitter Cardsタグ -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.ico">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="ファイルパス"></script>
+  
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="ファイルパス" defer></script>
 </head>
 <body>
   <!-- ヘッダー -->
   <header id="header">
     <h1 class="logo">
       <a href="index.html">
-        <img src="images/hoco28design_logo.svg" alt="Profile">
+        <img src="images/hoco28design_logo.svg" alt="haca28designのロゴ画像">
       </a>
     </h1>
-    <nav>
+    <nav aria-label="ヘッダーナビゲーション">
       <ul>
         <li>
           <a href="#about">About</a>
@@ -31,12 +45,12 @@
   <!-- メインコンテンツ -->
   <main id="main">
     <div id="mainvisual">
-      <img src="images/mainvisual.jpeg" alt="メインビジュアル">
+      <img src="images/mainvisual.jpeg" width="5000" height="3000" alt="メインビジュアル">
     </div>
     <section id="about">
       <h2 class="section-title">About</h2>
       <div class="content">
-        <img src="images/about.png" alt="">
+        <img src="images/about.png" width="600" height="600" alt="プロフィール画像">
         <div class="text">
           <h3>YUKI</h3>
           <p>WEBサイトやデザインを制作しています。</p>
@@ -48,21 +62,42 @@
       <ul>
         <li>
           <a class="design-link" href="/website/blue-world/index.html">
-           <img src="images/design1.png" alt="Blue Worldサムネイル画像"> 
+           <img src="images/design1.png" width="640" height="424" alt="Blue Worldサムネイル画像"> 
           </a>
           <h3>Blue World</h3>
           <p>青い写真と青いカラーを愛でるサイト</p>
         </li>
         <li>
+          <a class="design-link" href="/website/blooming-belle/index.html">
+            <img src="images/design2.png" width="640" height="424" alt="Blooming Belleサムネイル画像">
+          </a>
+          <h3>Blooming Belle</h3>
+          <p>花屋のWEBサイト</p>
+        </li>
+        <li>
+          <a class="design-link" href="/website/daily-cooking/index.html">
+            <img src="images/design3.png" width="640" height="424" alt="">
+          </a>
+          <h3>Daily Cooking</h3>
+          <p>毎日のお料理に役立つレシピサイト</p>
+        </li>
+        <li>
           <a class="design-link" href="#">
-            <img src="images/design2.jpg" alt="">
+            <img src="images/design3.jpg" width="640" height="424" alt="">
           </a>
           <h3>タイトルタイトル</h3>
           <p>テキストテキストテキスト</p>
         </li>
         <li>
           <a class="design-link" href="#">
-            <img src="images/design3.jpg" alt="">
+            <img src="images/design3.jpg" width="640" height="424" alt="">
+          </a>
+          <h3>タイトルタイトル</h3>
+          <p>テキストテキストテキスト</p>
+        </li>
+        <li>
+          <a class="design-link" href="#">
+            <img src="images/design3.jpg" width="640" height="424" alt="">
           </a>
           <h3>タイトルタイトル</h3>
           <p>テキストテキストテキスト</p>
