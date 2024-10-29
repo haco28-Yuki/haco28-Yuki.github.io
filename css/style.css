@@ -1,6 +1,5 @@
-@charset "UTF-8";
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,14 +15,18 @@ li {
   list-style: none;
 }
 
+/* ===========================================
+ * header
+ * ======================================== */
 #header {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 10px 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 @media screen and (min-width: 600px) {
   #header {
     padding: 10px 70px;
@@ -52,10 +55,13 @@ nav li {
 }
 
 nav a{
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   color: #24292E;
 }
 
+/* ===========================================
+ * mainvisual
+ * ======================================== */
 #mainvisual img {
   height: 600px;
   width: 100%;
@@ -67,14 +73,17 @@ nav a{
   padding: 80px 0 0 0;
   margin: 0 0 60px 0;
   color: #383E45;
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
   display: inline-block;
   border-bottom: 1px solid #383E45;
 }
 
+/* ===========================================
+ * about
+ * ======================================== */
 #about {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -90,6 +99,7 @@ nav a{
 #about img {
   border-radius: 50%;
   width: 100px;
+  height: auto
 }
 
 #about .text {
@@ -99,12 +109,12 @@ nav a{
 
 #about h3 {
   line-height: 1;
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin: 10px 0;
 }
 
 #about p {
-  font-size: 1.4rem;
+  font-size: .9rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 600px) {
@@ -117,8 +127,11 @@ nav a{
   }
 }
 
+/* ===========================================
+ * design
+ * ======================================== */
 #design {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -130,15 +143,18 @@ nav a{
 #design ul {
   display: flex;
   flex-direction: column;
-  margin: 0 4% 71px;
+  flex-wrap: wrap;
+  margin: 0 5% 70px 5%;
 }
 
 #design li {
-  margin-bottom: 28px;
+  margin-bottom: 40px;
 }
 
 #design img {
   width: 100%;
+  height: auto;
+  border: 1px solid #eee;
 }
 
 .design-link {
@@ -158,18 +174,18 @@ nav a{
 #design h3 {
   margin: 10px 0;
   color: #383E45;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 #design p {
   color: #383E45;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
 @media screen and (min-width: 600px) {
   #design ul {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 70px 71px;
+    margin: 0 2% 70px 2%;
   }
 
   #design li {
@@ -177,12 +193,15 @@ nav a{
   }
 }
 
+/* ===========================================
+ * footer
+ * ======================================== */
 #footer {
   padding: 10px 0;
   text-align: center;
 }
 
 #footer p {
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: #383E45;
 }
