@@ -1,0 +1,251 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.875rem;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .link {
+    color: #333;
+  }
+}
+
+/* ===========================================
+ * header
+ * ======================================== */
+#header {
+  margin-top: 30px;
+
+  .site-title {
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: palevioletred;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo-icon {
+    width: 2em;
+  }
+}
+
+/* ===========================================
+ * main
+ * ======================================== */
+/* ===========================================
+ * main > mainvisual
+ * ======================================== */
+#mainvisual {
+  margin-bottom: 60px;
+  
+  img {
+    max-width: 100%;
+  }
+
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* ===========================================
+ * main > news
+ * ======================================== */
+#news {
+  background-color: #f5f5f5;
+  margin-bottom: 60px;
+  padding: 60px;
+
+  .news-inner {
+    border: 1px solid #333;
+    padding: 30px;
+  }
+
+  .news-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  
+  li:last-child,
+  li:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+/* ===========================================
+ * main > gallery
+ * ======================================== */
+#gallery {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 45px 0;
+  }
+ 
+  li {
+    list-style: none;
+    width: 49%;
+    margin-bottom: 15px;
+  }
+    
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+/* ===========================================
+ * store
+ * ======================================== */
+#store {
+  background-color: #f5f5f5;
+  padding: 60px;
+  margin-bottom: 60px;
+
+  .flex {
+    display: flex;
+  }
+
+  dl {
+    width: 35%;
+    border-right: 1px solid #333;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+  
+  dd{
+    margin-bottom: 10px;
+            
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .map {
+    padding-left: 40px;
+    width: 65%;
+    aspect-ratio: 2/1;
+  }  
+   
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+/* ===========================================
+ * footer
+ * ======================================== */
+#footer {
+  font-size: 0.625rem;
+  text-align: center;
+  padding: 15px 0;
+
+  .inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* ===========================================
+ * SP表示
+ * ======================================== */
+@media(max-width:1024px) {
+  body {
+  }
+
+  #header {
+    padding: 0 10px;
+  }
+
+  #main {
+    .inner {
+      padding: 0 20px;
+    }    
+  }
+
+  #news {
+    padding: 40px 20px;
+
+    .news-list {
+      flex-direction: column;
+      width: 100%;
+          
+      li {
+        width: 100%;
+        text-align: center;
+      }
+
+      li:nth-of-type(odd){
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  #gallery {
+    .gallery-list{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    li {
+      width: 100%;
+      padding: 0 5%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #store {
+    padding: 40px 20px;
+          
+    .flex {
+      flex-direction: column;
+    }        
+      
+    dl {
+      border-right: none;
+      border-bottom: 1px solid #333;
+      width: 100%;
+      padding: 0 0 40px 0;
+    }
+    
+    .map {
+      width: 100%;
+      padding: 40px 0 0 0;
+    }
+  }
+}
