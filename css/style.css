@@ -103,8 +103,8 @@ nav a{
 }
 
 #about .text {
-  width: 403px;
-  text-align: left;
+  width: 100%;
+  text-align: center;
 }
 
 #about h3 {
@@ -123,7 +123,9 @@ nav a{
   }
 
   #about .text {
+    width: 400px;
     margin-left: 30px;
+    text-align: left;
   }
 }
 
