@@ -39,6 +39,9 @@ body .link {
 #header .site-title {
   height: 50px;
 }
+#header .site-title p {
+  line-height: 1;
+}
 #header a {
   display: flex;
   align-items: center;
@@ -79,7 +82,7 @@ body .link {
 #mainvisual .splide__slide a {
   display: block;
   max-width: 100%;
-  height: calc(100vh - 66px);
+  height: calc(100vh - 80px);
   overflow: hidden;
 }
 #mainvisual .splide__slide img {
@@ -168,7 +171,19 @@ body .link {
 #store .map {
   padding-left: 40px;
   width: 65%;
-  aspect-ratio: 2/1;
+}
+#store .map-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+#store .map-inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 #store p {
   margin-bottom: 20px;
@@ -197,6 +212,10 @@ body .link {
     top: 0;
     display: block;
     z-index: 1000;
+  }
+  #header .site-title a {
+    width: 60%;
+    height: auto;
   }
   #header .menu-btn {
     display: block;
@@ -233,6 +252,13 @@ body .link {
   .header-navi ul li a {
     justify-content: center;
     padding: 20px 0;
+  }
+  #mainvisual {
+    margin-bottom: 60px;
+    /* splide */
+  }
+  #mainvisual .splide__slide a {
+    height: 50vh;
   }
   #main .inner {
     padding: 0 20px;

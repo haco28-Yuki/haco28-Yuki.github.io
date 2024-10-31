@@ -43,6 +43,10 @@ body {
     height: 50px;
   }
 
+  .site-title p {
+    line-height: 1;
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -90,7 +94,7 @@ body {
   .splide__slide a {
     display: block;
     max-width: 100%;
-    height: calc(100vh - 66px);
+    height: calc(100vh - 80px);
     overflow: hidden;
   }
 
@@ -193,8 +197,22 @@ body {
   .map {
     padding-left: 40px;
     width: 65%;
-    aspect-ratio: 2/1;
-  }  
+  }
+
+  .map-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+  }
+
+  .map-inner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
    
   p {
     margin-bottom: 20px;
@@ -219,8 +237,6 @@ body {
  * SP表示
  * ======================================== */
 @media(max-width:1024px) {
-  body {
-  }
 
   #header {
     position: fixed;
@@ -228,6 +244,11 @@ body {
     top: 0;
     display: block;
     z-index: 1000;
+
+    .site-title a {
+      width: 60%;
+      height: auto;
+    }
 
     .menu-btn {
       display: block;
@@ -270,6 +291,16 @@ body {
   .header-navi ul li a {
     justify-content: center;
     padding: 20px 0;
+  }
+
+  // mainvisual
+  #mainvisual {
+    margin-bottom: 60px;
+    
+    /* splide */
+    .splide__slide a {
+      height: 50vh;
+    }
   }
 
   #main {
