@@ -181,6 +181,7 @@ nav a{
   color: #383E45;
   font-size: 0.9rem;
 }
+
 @media screen and (min-width: 600px) {
   #design ul {
     flex-direction: row;
