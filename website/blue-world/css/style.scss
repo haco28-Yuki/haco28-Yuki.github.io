@@ -42,6 +42,38 @@ a:hover {
 }
 
 /* ===========================================
+ * loading
+ * ======================================== */
+#loading {
+  color: #fff;
+  background: rgba(213, 231, 242, 1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+#loading p {
+  font-family: var(--font-en);
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+}
+
+/* ===========================================
+ * fade
+ * ======================================== */
+ .fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* ===========================================
  * header
  * ======================================== */
 #header {
