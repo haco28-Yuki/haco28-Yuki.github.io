@@ -1,4 +1,72 @@
 /* ===========================================
+ * ローディング画面
+ * ======================================== */
+const loadingArea = document.querySelector('#loading');
+const loadingText = document.querySelector('#loading p');
+
+window.addEventListener('load', () => {
+  // ローディング中（ぼかし画面）
+  loadingArea.animate(
+    {
+      backdropFilter: ['blur(10px)', 'blur(0)'],
+      background: ['rgba(213, 231, 242, 1)', 'rgba(213, 231, 242, 0)'],
+      visibility: 'hidden',
+    },
+    {
+      duration: 2000,
+      delay: 1200,
+      easing: 'ease',
+      fill: 'forwards',
+    }
+  );
+
+  // ローディングテキスト
+  loadingText.animate(
+    [
+      {
+        opacity: 1,
+        offset: .8, //80%
+      },
+      {
+        opacity: 0,
+        offset: 1 //100%
+      },
+    ],
+    {
+      duration: 1200,
+      easing: 'ease',
+      fill: 'forwards',
+    }
+  );
+});
+
+/* ===========================================
+ * フェードイン
+ * ======================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observerOptions = {
+      root: null, // ビューポートをルートとする
+      rootMargin: '0px',
+      threshold: 0.1 // 要素が10％表示された時にコールバックを実行
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target); // 一度観察したら、観察を解除
+          }
+      });
+  }, observerOptions);
+
+  fadeElements.forEach(element => {
+      observer.observe(element);
+  });
+});
+
+/* ===========================================
  * テキストコピーボックス
  * ======================================== */
 
