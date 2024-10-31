@@ -1,117 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>haco28 design</title>
+  <meta name="description" content="haco28 design｜小さなWEBサイトのギャラリー">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- OGP -->
+  <meta property="og:title" content="haco28 design | TOP PAGE" />
+  <meta property="og:description" content="haco28 design｜小さなWEBサイトのギャラリー" />
+  <meta property="og:image" content="images/mainvisual.jpg" />
+  <meta property="og:url" content="############" />
+  <meta property="og:site_name" content="haco28 design" />
+  <!-- Twitter Cardsタグ -->
+  <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="shortcut icon" href="/favicon.ico" id="favicon">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="images/favicon.ico">
 
-  <title>Blooming Belle</title>
-  <meta name="description" content="ここにWEBページの説明文">
-  <meta name="keywords" content="キーワード1, キーワード2">
-
-  <link rel="stylesheet" href="css/ress.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Splide CSS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
-
-  <!-- Splide JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js" defer></script>
-  <!-- Zooming JS-->
-  <script src="https://unpkg.com/zooming/build/zooming.min.js" defer></script>
-  <script src="js/script.js" defer></script>
-
+  <script src="ファイルパス" defer></script>
 </head>
 <body>
-<div class="container">
+  <!-- ヘッダー -->
   <header id="header">
-    <h1 class="site-title">
+    <h1 class="logo">
       <a href="index.html">
-        <img class="logo-icon" src="./images/logo-icon.png" alt="Blooming Belle">
-        <p>Blooming Belle</p>
+        <img src="images/hoco28design_logo.svg" alt="haca28designのロゴ画像">
       </a>
     </h1>
-    <div class="menu-btn">menu</div>
-    <div class="header-navi">
-      <nav>
-        <ul>
-          <li><a href="#news">NEWS</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#store">STORE</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-</div>
-
-  <main id="main">
-    <!-- splide -->
-    <div id="mainvisual" class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <a href="#" aria-label="false"><img src="./images/slide1.jpeg" alt=""></a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" aria-label="false"><img src="./images/slide2.jpeg" alt=""></a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" aria-label="false"><img src="./images/slide3.jpeg" alt=""></a>
-          </li>
-          <li class="splide__slide">
-            <a href="#" aria-label="false"><img src="./images/slide4.jpeg" alt=""></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="inner container">
-      <section id="news">
-        <h2 class="section-title">NEWS</h2>
-        <div class="news-inner">
-          <ul class="news-list">
-            <li>2024.10.25</li><li>WEBサイトオープン</li>
-            <li>2024.10.25</li><li>WEBサイトオープン</li>
-            <li>2024.10.25</li><li>WEBサイトオープン</li>
-            <li>2024.10.28</li><li>送料改訂のお知らせ</li>
-            <li>2024.10.25</li><li>WEBサイトオープン</li>
-          </ul>
-        </div>
-      </section>
-
-      <div id="gallery">
-        <ul class="gallery-list">
-          <li><img class="img-zoomable" src="./images/photo1.jpg" alt="1"></li>
-          <li><img class="img-zoomable" src="./images/photo2.jpg" alt="2"></li>
-          <li><img class="img-zoomable" src="./images/photo3.jpg" alt="3"></li>
-          <li><img class="img-zoomable" src="./images/photo4.jpg" alt="4"></li>
+    <nav aria-label="ヘッダーナビゲーション">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#design">Design</a>
+        </li>
       </ul>
-      </div>
-      
-      <section id="store">
-        <h2 class="section-title">STORE</h2>
-        <div class="flex">
-          <dl>
-            <dt>ADDRESS：</dt><dd>〒012-3456<br>東響都桃京区1丁目23-45<br>桃京駅より徒歩3分</dd>
-            <dt>OPEN：</dt><dd>10:00~16:00(水曜定休日)</dd>
-            <dt>TEL：</dt><dd>012-345-6789</dd>
-          </dl>
-          <div class="map">
-            <div class="map-inner">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3240.8332325602614!2d139.7670909!3d35.6811081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1730114757451!5m2!1sja!2sjp" width= "100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
+    </nav>
+  </header>
+  <!-- メインコンテンツ -->
+  <main id="main">
+    <div id="mainvisual">
+      <img src="images/mainvisual.jpeg" width="5000" height="3000" alt="メインビジュアル">
     </div>
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="content">
+        <img src="images/about.png" width="600" height="600" alt="プロフィール画像">
+        <div class="text">
+          <h3>YUKI</h3>
+          <p>WEBサイトやデザインを制作しています。</p>
+        </div>
+      </div>
+    </section>
+    <section id="design">
+      <h2 class="section-title">Design</h2>
+      <ul>
+        <li>
+          <a class="design-link" href="/website/blue-world/index.html">
+           <img src="images/design1.png" width="640" height="424" alt="Blue Worldサムネイル画像"> 
+          </a>
+          <h3>Blue World</h3>
+          <p>青い写真と青いカラーを愛でるサイト</p>
+        </li>
+        <li>
+          <a class="design-link" href="/website/blooming-belle/index.html">
+            <img src="images/design2.png" width="640" height="424" alt="Blooming Belleサムネイル画像">
+          </a>
+          <h3>Blooming Belle</h3>
+          <p>花屋のWEBサイト</p>
+        </li>
+        <li>
+          <a class="design-link" href="/website/daily-cooking/index.html">
+            <img src="images/design3.png" width="640" height="424" alt="Daily Cookingサムネイル画像">
+          </a>
+          <h3>Daily Cooking</h3>
+          <p>毎日のお料理に役立つレシピサイト</p>
+        </li>
+        <li>
+          <a class="design-link" href="/website/cafe-soleil/index.html">
+            <img src="images/design4.png" width="640" height="424" alt="café soleilサムネイル画像">
+          </a>
+          <h3>café soleil</h3>
+          <p>カフェのWEBサイト</p>
+        </li>
+        <!-- <li>
+          <a class="design-link" href="#">
+            <img src="images/design3.jpg" width="640" height="424" alt="">
+          </a>
+          <h3>タイトルタイトル</h3>
+          <p>テキストテキストテキスト</p>
+        </li>
+        <li>
+          <a class="design-link" href="#">
+            <img src="images/design3.jpg" width="640" height="424" alt="">
+          </a>
+          <h3>タイトルタイトル</h3>
+          <p>テキストテキストテキスト</p>
+        </li> -->
+      </ul>
+    </section>
   </main>
-
+  <!-- フッター -->
   <footer id="footer">
-    <p class="inner">© 2024 Blooming Belle</p>
+    <p>&copy; 2024 haco28design.</p>
   </footer>
-</div>
 </body>
 </html>
