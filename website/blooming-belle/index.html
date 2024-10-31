@@ -15,7 +15,12 @@
   <link rel="stylesheet" href="css/ress.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Zooming -->
+  <!-- Splide CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+
+  <!-- Splide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js" defer></script>
+  <!-- Zooming JS-->
   <script src="https://unpkg.com/zooming/build/zooming.min.js" defer></script>
   <script src="js/script.js" defer></script>
 
@@ -29,14 +34,41 @@
         <p>Blooming Belle</p>
       </a>
     </h1>
+    <div class="menu-btn">menu</div>
+    <div class="header-navi">
+      <nav>
+        <ul>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#store">STORE</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+</div>
 
   <main id="main">
-    <div id="mainvisual">
-      <img src="./images/mainvisual.jpg" alt="mainvisual">
+    <!-- splide -->
+    <div id="mainvisual" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a href="#" aria-label="false"><img src="./images/slide1.jpeg" alt=""></a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" aria-label="false"><img src="./images/slide2.jpeg" alt=""></a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" aria-label="false"><img src="./images/slide3.jpeg" alt=""></a>
+          </li>
+          <li class="splide__slide">
+            <a href="#" aria-label="false"><img src="./images/slide4.jpeg" alt=""></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="inner">
+    <div class="inner container">
       <section id="news">
         <h2 class="section-title">NEWS</h2>
         <div class="news-inner">

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
@@ -27,11 +31,16 @@ body {
  * header
  * ======================================== */
 #header {
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 10px 0;
+  background-color: #fff;
+
 
   .site-title {
-    height: auto;
-    margin-bottom: 15px;
+    height: 50px;
   }
 
   a {
@@ -48,6 +57,24 @@ body {
   .logo-icon {
     width: 2em;
   }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .header-navi ul {
+  list-style: none;
+  display: flex;
+  }
+
+  .header-navi li {
+    margin: 0 30px;
+  }
+
+  .header-navi li a {
+    line-height: 1;
+    font-size: 1rem;
+  }
 }
 
 /* ===========================================
@@ -59,19 +86,29 @@ body {
 #mainvisual {
   margin-bottom: 60px;
   
-  img {
+  /* splide */
+  .splide__slide a {
+    display: block;
     max-width: 100%;
+    height: calc(100vh - 66px);
+    overflow: hidden;
   }
 
-  .inner {
-    max-width: 800px;
-    margin: 0 auto;
+  .splide__slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 /* ===========================================
  * main > news
  * ======================================== */
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 #news {
   background-color: #f5f5f5;
   margin-bottom: 60px;
@@ -186,13 +223,63 @@ body {
   }
 
   #header {
-    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    z-index: 1000;
+
+    .menu-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      z-index: 2000;
+      background-color: #fff;
+      height: 60px;
+      width: 60px;
+      color: palevioletred;
+      border: 1px solid palevioletred;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  .header-navi {
+    display: none;
+  }
+
+  .header-navi.view {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+  }
+
+  .header-navi ul {
+    background-color: #fff;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #header .header-navi ul li {
+    margin: 0;
+  }
+
+  .header-navi ul li a {
+    justify-content: center;
+    padding: 20px 0;
   }
 
   #main {
     .inner {
       padding: 0 20px;
     }    
+  }
+
+  #mainvisual {
+    margin-top: 80px;
   }
 
   #news {
