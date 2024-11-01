@@ -48,6 +48,7 @@ li {
 
 nav ul {
   display: flex;
+  align-items: center;
 } 
 
 nav li {
@@ -58,6 +59,20 @@ nav a{
   font-size: 0.9rem;
   font-weight: bold;
   color: #24292E;
+}
+
+.sns-x a {
+  line-height: 0;
+  display: block;
+  background-color: #24292E;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.sns-x img {
+  vertical-align: center;
+  height: 0.9rem;
+  width: auto;
 }
 
 /* ===========================================
@@ -124,6 +139,21 @@ nav a{
   font-size: .9rem;
   line-height: 1.5;
 }
+
+#about .prof {
+  margin-bottom: 10px;
+}
+
+#about .text p .tag {
+  color: #fff;
+  background-color: #3b3b3b;
+  line-height: 1;
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 600px) {
   #about .content {
     flex-direction: row;
