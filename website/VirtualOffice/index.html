@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Virtual Office</title>
+	<link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo_blue.svg" alt="Virtual Office">
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="menu-list">
+          <li><a href="#features">特徴</a></li>
+          <li><a href="#introduction-example">導入事例</a></li>
+          <li><a href="#price-list">プランと料金</a></li>
+          <li><a href="#qa">よくあるご質問</a></li>
+        </ul>
+        <ul class="menu-btn">
+          <li><a class="btn-orange" href="#">資料請求</a></li>  
+          <li><a class="btn-blue" href="#telephone">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn" type="button" aria-label="クリックしてメニューを開く"
+      aria-expanded="false" aria-controls="headerMobileNav">
+        <span class="open"></span>
+      </button>
+    </div>
+    <nav class="header__mobile-nav" id="headerMobileNav"
+        aria-label="グローバルナビゲーション" aria-hidden="true">
+      <ul class="header__mobile-menu">
+        <li class="menu"><a href="#features">特徴</a></li>
+        <li class="menu"><a href="#introduction-example">導入事例</a></li>
+        <li class="menu"><a href="#price-list">プランと料金</a></li>
+        <li class="menu"><a href="#qa">よくあるご質問</a></li>
+        <li class="btn"><a class="btn-orange" href="#">資料請求</a></li>  
+        <li class="btn"><a class="btn-blue" href="#telephone">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main id="main">
+    <!-- mainvisual -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            場所にとらわれない、<br>
+            バーチャル<br>
+            オフィスツール
+          </h1>
+          <p class="hero-description">
+            リモートワークでも、まるで隣にいるような一体感。<br>
+            VirtualOfficeで距離を超えてチーム連携を強化しましょう。
+          </p>
+          <a class="btn" href="#">
+            <span>簡単解説！</span>資料請求をする
+          </a>
+          <div class="results-box">
+            <p class="results"><span class="lg">導入企業<br></span><span class="num">100</span>社以上</p>
+          </div>
+        </div>
+        <div class="hero-img">  
+          <img src="images/hero-img.png" alt="メインビジュアル">
+        </div>
+      </div>
+    </section>
+
+    <!-- #problem -->
+    <section id="problem">
+      <h2 class="problem-title">
+        あなたのリモートワーク、<br>
+        こんな課題はありませんか？
+      </h2>
+      <div class="problem-inner">
+        <div class="problem-box">
+          <h3>コラボレーションの効率が低下</h3>
+          <p>
+            一緒に作業したいのに、ツールやプラットフォームの違いで作業がスムーズに進まない。
+          </p>
+        </div>
+        <div class="problem-box">
+          <h3>チームメンバーとのコミュニケーションが希薄</h3>
+          <p>
+            メールやチャットだけでは伝えきれないニュアンス、直接会うことができない孤独感。
+          </p>
+        </div>
+        <div class="problem-box">
+          <h3>進捗管理が難しい</h3>
+          <p>
+            各自が異なる場所で作業する中で、タスクの見える化が難しく、進捗が把握しづらい。
+          </p>
+        </div>
+      </div>
+      <p class="conclusion">
+        現実のオフィス環境を再現し、<br>
+        コミュニケーションをサポートします。
+      </p>
+      <p class="conclusion-text">
+        VirtualOfficeはリモートワーク時代における<br>
+        新しい働き方をサポートする革新的なサービスです。
+      </p>
+    </section>
+    <div class="triangle"></div>
+
+    <!-- #features -->
+    <section id="features">
+      <h2 class="section-title">特徴</h2>
+      <div class="features-inner">
+        <div class="features-box">
+          <div class="features-box-inner">
+            <div class="width left">
+              <span>特徴1</span>
+              <h3>
+                3Dバーチャルオフィスで<br>
+                オフィススペースを再現
+              </h3>
+              <p>
+                ユーザーは3Dモデリングされたオフィス空間を探索できます。デスク、会議室、カフェスペースなど、現実のオフィスに近い環境を提供します。自分のデスクや作業スペースは自由にカスタマイズが可能。
+              </p>
+            </div>
+          </div>
+          <div class="features-img">
+            <img src="images/features1.png" alt="">
+          </div>
+        </div>        
+        <div class="features-box reverse">
+          <div class="features-box-inner right">
+            <div class="width">
+              <span>特徴2</span>
+              <h3>
+                仮想会議室と<br>
+                会議室予約システム
+              </h3>
+              <p>
+                ビデオ会議用の仮想会議室を予約し、リアルタイムの対面会議が可能です。会議のスケジュールも簡単に管理できます。
+              </p>
+            </div>
+          </div>
+          <div class="features-img">
+            <img src="images/features2.png" alt="">
+          </div>
+        </div>
+        <div class="features-box">
+          <div class="features-box-inner">
+            <div class="width left">
+              <span>特徴3</span>
+              <h3>
+                リアルタイムの<br>
+                チームコミュニケーション
+              </h3>
+              <p>
+                バーチャルアバターを使用してオフィス内の他のメンバーと音声通話やビデオ会議を簡単に開始できます。
+              </p>
+            </div>
+          </div>
+          <div class="features-img">
+            <img src="images/features3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <p>
+        サービスを詳しく知りたい方はこちら
+      </p>
+      <a class="btn" href="#">
+        <span>簡単解説！</span>資料請求
+      </a>
+    </div>
+
+    <!-- #introduction-example -->
+    <section id="introduction-example">
+      <h2 class="section-title">導入事例</h2>
+      <div class="examples">
+        <div class="example">
+          <p class="company-name">テックソリューションズ株式会社</p>
+          <h3>チーム間の連携が強化！</h3>
+          <img src="images/example1.png" alt="">
+          <span class="tag">業種：IT</span>
+          <span class="tag">従業員：1000人</span>
+          <p class="problem">課題</p>
+          <p>
+            リモートワークによるコミュニケーションの効率化を実現したい。
+          </p>
+        </div>
+        <div class="example">
+          <p class="company-name">グローバルマーケティング株式会社</p>
+          <h3>複数の国の拠点からアクセス</h3>
+          <img src="images/example2.png" alt="">
+          <span class="tag">業種：広告代理店</span>
+          <span class="tag">従業員：6000人</span>
+          <p class="problem">課題</p>
+          <p>
+            異なるタイムゾーンによるコミュニケーションの遅れがあった。
+          </p>
+        </div>
+        <div class="example">
+          <p class="company-name">クリエイティブデザインスタジオ</p>
+          <h3>クリエイティブに集中できる</h3>
+          <img src="images/example3.png" alt="">
+          <span class="tag">業種：食品</span>
+          <span class="tag">従業員：200人</span>
+          <p class="problem">課題</p>
+          <p>
+            デザインファイルやプロジェクト資料の共有が煩雑で、作業効率が低下していた。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta bg-blue">
+      <p>
+        まずは３０日間無料お試し期間
+      </p>
+      <a class="btn" href="#">
+        <span>簡単解説！</span>資料請求
+      </a>
+    </div>
+
+    <!-- #price-list -->
+    <section id="price-list">
+      <h2 class="section-title">プランと料金</h2>
+      <div class="plan">
+        <div class="standard">
+          <h3 class="plan-name">スタンダード</h3>
+          <p class="plan-name-en">Standard</p>
+          <p class="price"><span>2,500</span>円</p>
+          <p class="monthly-fee">月額（税抜価格）</p>
+          <p class="annotation">すべてのライトプラン機能に加えて</p>
+          <ul>
+            <li>オフィスレイアウト自由</li>
+            <li>ビデオ会議機能</li>
+            <li>プロジェクト管理ツール統合</li>
+            <li>ドキュメント共有</li>
+          </ul>
+          <a class="btn" href="#">
+            <span>スタンダードプラン</span>
+            <p>お申し込み</p>
+          </a>
+        </div>
+        <div class="light">
+          <h3 class="plan-name">ライト</h3>
+          <p class="plan-name-en">Light</p>
+          <p class="price"><span>1,500</span>円</p>
+          <p class="monthly-fee">月額（税抜価格）</p>
+          <ul>
+            <li class="gr">3Dバーチャルオフィス</li>
+            <li class="gr">リアルタイムチャット</li>
+            <li class="gr">デスク予約システム</li>
+          </ul>
+          <a class="btn-white" href="#">
+            <span>ライトプラン</span>
+            <p>お申し込み</p>
+          </a>
+        </div>
+        <div class="pro">
+          <h3 class="plan-name">プロ</h3>
+          <p class="plan-name-en">Pro</p>
+          <p class="price"><span>3,500</span>円</p>
+          <p class="monthly-fee">月額（税抜価格）</p>
+          <p class="annotation">すべてのスタンダードプラン機能に加えて</p>
+          <ul>
+            <li class="gr">無制限のユーザー追加</li>
+            <li class="gr">専用のカスタマーサポート</li>
+            <li class="gr">詳細なレポートと分析</li>
+            <li class="gr">高度なセキュリティ機能</li>
+            <li class="gr">専用の導入サポート</li>
+          </ul>
+          <a class="btn-white" href="#">
+            <span>プロプラン</span>
+            <p>お申し込み</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- #qa -->
+    <section id="qa">
+      <div class="qa-inner">
+        <h2 class="section-title">よくあるご質問</h2>
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Q</span>
+            <p>
+              VirtualOfficeを導入する際の手順や初期設定について教えてください。
+            </p>
+            <span class="opcl"></span>
+          </summary>
+          <div class="accordion__inner">
+            <span>A</span>
+            <p>
+              VirtualOfficeの導入は簡単で、以下の手順で行えます。<br>
+              <a href="#">VirtualOfficeの導入手順マニュアル</a>
+            </p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Q</span>
+            <p>
+              VirtualOfficeを既存の社内システムと連携することは可能ですか？
+            </p>
+            <span class="opcl"></span>
+          </summary>
+          <div class="accordion__inner">
+            <span>A</span>
+            <p>
+              プロプランのみVirtualOfficeと連携させることが出来ます。
+            </p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__title">
+            <span>Q</span>
+            <p>
+              VirtualOfficeはスマートフォンやタブレットでも利用できますか？
+            </p>
+            <span class="opcl"></span>
+          </summary>
+          <div class="accordion__inner">
+            <span>A</span>
+            <p>
+              アプリ版のVirtualOfficeを入れて頂くことによりスマートフォンやタブレットからもご利用いただけます。
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="cta bg-img">
+      <p>
+        今すぐ資料請求
+      </p>
+      <a class="btn" href="#">
+        <span>簡単解説！</span>資料請求
+      </a>
+      <a class="inquiry" href="#">お問い合わせ</a>
+    </div>
+
+    <!-- #telephone -->
+    <div id="telephone">
+      <div class="telephone-inner">
+        <p>お電話でのお問い合わせはこちら</p>
+        <a class="phone-no" href="tel:">0123-456-789</a>
+        <span>平日9:00-18:00</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="#">
+        <img src="images/logo_white.svg" alt="">
+      </a>
+      <ul class="footer-menu">
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">サポート</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">運営会社</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy Virtual Office</p>
+  </footer>
+</body>
+</html>
